@@ -23,7 +23,6 @@ List<DeviceCardUtils> deviceCardUtilsList = [
   DeviceCardUtils(icon: Icons.nfc_outlined, title: "NFC"),
   DeviceCardUtils(icon: Icons.screen_rotation, title: "Auto Rotation"),
   DeviceCardUtils(icon: Icons.surround_sound, title: "Proximity"),
-  DeviceCardUtils(icon: Icons.screenshot_outlined, title: "Dead Pixel"),
   DeviceCardUtils(icon: Icons.phone_android, title: "Screen"),
   DeviceCardUtils(icon: Icons.usb, title: "Micro USB"),
   DeviceCardUtils(icon: Icons.flashlight_on, title: "Torch"),
