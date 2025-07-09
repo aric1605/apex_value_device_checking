@@ -241,9 +241,7 @@ class TracePainter extends CustomPainter {
   bool shouldRepaint(TracePainter oldDelegate) => true;
 }
 
-// ---------------------
-// 4️⃣ Touch Grid Test
-// ---------------------
+//Touch Grid Test
 
 class TouchGridTestScreen extends StatefulWidget {
   const TouchGridTestScreen({super.key});
@@ -340,9 +338,7 @@ class GridPainter extends CustomPainter {
   bool shouldRepaint(GridPainter oldDelegate) => true;
 }
 
-// ---------------------
-// 5️⃣ Multi-Touch Test
-// ---------------------
+//Multi-Touch Test
 
 class MultiTouchTestScreen extends StatefulWidget {
   const MultiTouchTestScreen({super.key});
