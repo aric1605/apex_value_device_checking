@@ -1,3 +1,4 @@
+import 'package:apex_value_device_checking/pages/testPages/fingerprint_screen.dart';
 import 'package:apex_value_device_checking/pages/testPages/screenTest.dart';
 import 'package:flutter/material.dart';
 import 'package:apex_value_device_checking/pages/testPages/bettery_page.dart';
@@ -67,6 +68,16 @@ class Home extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                               builder: (_) => const Screentest(),
+                              settings: const RouteSettings(
+                                name: '/DeviceScreen',
+                              ),
+                            ),
+                          );
+                        } else if (device.title == "Fingerprint") {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) => FingerprintCheckScreen(),
                               settings: const RouteSettings(
                                 name: '/DeviceScreen',
                               ),
