@@ -1,3 +1,4 @@
+import 'package:apex_value_device_checking/pages/testPages/cameraPage.dart';
 import 'package:apex_value_device_checking/pages/testPages/fingerprint_screen.dart';
 import 'package:apex_value_device_checking/pages/testPages/gsm_check_page.dart';
 import 'package:apex_value_device_checking/pages/testPages/screenTest.dart';
@@ -100,6 +101,16 @@ class Home extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                               builder: (_) => TorchPage(),
+                              settings: const RouteSettings(
+                                name: '/DeviceScreen',
+                              ),
+                            ),
+                          );
+                        } else if (device.title == "Camera") {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) => AwesomeCameraPage(),
                               settings: const RouteSettings(
                                 name: '/DeviceScreen',
                               ),
