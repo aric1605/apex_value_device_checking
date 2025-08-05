@@ -16,20 +16,6 @@ class _AwesomeCameraPageState extends State<AwesomeCameraPage> {
       appBar: AppBar(title: const Text('Awesome Camera')),
       body: CameraAwesomeBuilder.awesome(
         saveConfig: SaveConfig.photoAndVideo(),
-        // onMediaTap: (mediaCapture) async {
-        //   final file = await mediaCapture.captureRequest.savedFile;
-        //   final path = file?.path;
-        //
-        //   if (path != null) {
-        //     OpenFile.open(path);
-        //   } else {
-        //     if (mounted) {
-        //       ScaffoldMessenger.of(context).showSnackBar(
-        //         const SnackBar(content: Text("File not available yet.")),
-        //       );
-        //     }
-        //   }
-        // },
         onMediaTap: (mediaCapture) async {
           print('MediaCapture: $mediaCapture');
           print(
