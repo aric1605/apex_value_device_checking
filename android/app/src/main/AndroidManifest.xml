@@ -29,6 +29,13 @@
     <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
     <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> -->
 
+    <!-- Proximity Sensor Test -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <!-- NFC Test -->
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-feature android:name="android.hardware.nfc" android:required="false" />
+
     <application
         android:label="apex_value_device_checking"
         android:name="${applicationName}"

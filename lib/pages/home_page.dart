@@ -1,6 +1,7 @@
 import 'package:apex_value_device_checking/pages/testPages/cameraPage.dart';
 import 'package:apex_value_device_checking/pages/testPages/fingerprint_screen.dart';
 import 'package:apex_value_device_checking/pages/testPages/gsm_check_page.dart';
+import 'package:apex_value_device_checking/pages/testPages/proximitySensorPage.dart';
 import 'package:apex_value_device_checking/pages/testPages/screenTest.dart';
 import 'package:apex_value_device_checking/pages/testPages/torch.dart';
 import 'package:flutter/material.dart';
@@ -111,6 +112,16 @@ class Home extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                               builder: (_) => AwesomeCameraPage(),
+                              settings: const RouteSettings(
+                                name: '/DeviceScreen',
+                              ),
+                            ),
+                          );
+                        } else if (device.title == "Proximity") {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) => Proximitysensorpage(),
                               settings: const RouteSettings(
                                 name: '/DeviceScreen',
                               ),
