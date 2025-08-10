@@ -1,3 +1,4 @@
+import 'package:apex_value_device_checking/pages/testPages/locationCheckPage.dart';
 import 'package:apex_value_device_checking/pages/testPages/storageCheck.dart';
 import 'package:flutter/material.dart';
 import 'package:apex_value_device_checking/pages/testPages/cameraPage.dart';
@@ -143,6 +144,16 @@ class Home extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                               builder: (_) => Storagecheck(),
+                              settings: const RouteSettings(
+                                name: '/DeviceScreen',
+                              ),
+                            ),
+                          );
+                        } else if (device.title == "Gps") {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) => LocationCheckPage(),
                               settings: const RouteSettings(
                                 name: '/DeviceScreen',
                               ),
