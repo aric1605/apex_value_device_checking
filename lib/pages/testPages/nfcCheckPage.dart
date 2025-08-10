@@ -35,11 +35,11 @@ class _NfcCheckPageState extends State<NfcCheckPage> {
   //
   //   setState(() {
   //     if (!hasHardware) {
-  //       _nfcStatus = '❌ NFC hardware not present on this device.';
+  //       _nfcStatus = 'NFC hardware not present on this device.';
   //     } else if (!isEnabled) {
-  //       _nfcStatus = '⚠️ NFC hardware is present but currently disabled.';
+  //       _nfcStatus = '⚠NFC hardware is present but currently disabled.';
   //     } else {
-  //       _nfcStatus = '✅ NFC is available and enabled!';
+  //       _nfcStatus = 'NFC is available and enabled!';
   //     }
   //   });
   // }

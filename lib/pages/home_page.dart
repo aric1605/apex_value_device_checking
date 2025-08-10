@@ -1,3 +1,5 @@
+import 'package:apex_value_device_checking/pages/testPages/storageCheck.dart';
+import 'package:flutter/material.dart';
 import 'package:apex_value_device_checking/pages/testPages/cameraPage.dart';
 import 'package:apex_value_device_checking/pages/testPages/fingerprint_screen.dart';
 import 'package:apex_value_device_checking/pages/testPages/gsm_check_page.dart';
@@ -5,11 +7,9 @@ import 'package:apex_value_device_checking/pages/testPages/nfcCheckPage.dart';
 import 'package:apex_value_device_checking/pages/testPages/proximitySensorPage.dart';
 import 'package:apex_value_device_checking/pages/testPages/screenTest.dart';
 import 'package:apex_value_device_checking/pages/testPages/torch.dart';
-import 'package:flutter/material.dart';
 import 'package:apex_value_device_checking/pages/testPages/bettery_page.dart';
 import 'package:apex_value_device_checking/pages/testPages/bluetooth_page.dart';
 import 'package:apex_value_device_checking/pages/testPages/vibrate_page.dart';
-
 import '../constants/device_card_utils.dart';
 import '../widgets/device_card.dart';
 import '../widgets/phone_info.dart';
@@ -133,6 +133,16 @@ class Home extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                               builder: (_) => NfcCheckPage(),
+                              settings: const RouteSettings(
+                                name: '/DeviceScreen',
+                              ),
+                            ),
+                          );
+                        } else if (device.title == "Storage") {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) => Storagecheck(),
                               settings: const RouteSettings(
                                 name: '/DeviceScreen',
                               ),
